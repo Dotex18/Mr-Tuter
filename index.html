@@ -12,7 +12,7 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="icon" type="image/png" href="assets/images/logo1.png">
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
@@ -27,6 +27,80 @@ TemplateMo 586 Scholar
 https://templatemo.com/tm-586-scholar
 
 -->
+
+
+
+<!-- Font Awesome CDN for WhatsApp Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<!-- WhatsApp Button Styles -->
+<style>
+ .whatsapp-button {
+     position: fixed;
+     bottom: 30px;
+     right: 30px;
+     background-color: white;
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     border: 2px solid #25D366;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s, box-shadow 0.3s;
+     z-index: 1000;
+     animation: pulseEffect 3s infinite;
+ }
+
+ .whatsapp-button:hover {
+     transform: scale(1.1);
+     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+ }
+
+ @keyframes pulseEffect {
+     0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+     50% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+ }
+ 
+</style>
+
+<style>.nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: -20px; /* Adjust as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  gap: 10px; /* Space between buttons */
+}
+
+.nav-btn {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: #1a3b92;
+  color: white;
+}
+
+.prev-slide, .next-slide {
+  font-size: 18px;
+  color: #1a3b92;
+}
+
+
+</style>
   </head>
 
 <body>
@@ -50,24 +124,28 @@ https://templatemo.com/tm-586-scholar
         <div class="row">
             <div class="col-12">
                 <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                      <h1>Mr.Tutor</h1>
-                  </a>
+                   <!-- ***** Logo Start ***** -->
+<a href="index.html" class="logo" >
+  <img src="assets/images/mr_logo.png" alt="Mr.Tutor Logo" style="height: 32px; width: 100px; margin-right: 8px;"> <!-- Adjust height as needed to match h1 size -->
+</a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Serach Start ***** -->
+                    <!-- 
                     <div class="search-input">
                       <form id="search" action="#">
                         <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
                         <i class="fa fa-search"></i>
                       </form>
-                    </div>
+                    </div> 
+                    
+                    -->
                     <!-- ***** Serach Start ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
                       <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                       <li class="scroll-to-section"><a href="#services">Services</a></li>
                       <li class="scroll-to-section"><a href="#courses">Courses</a></li>
+                      <li class="scroll-to-section"><a href="#About">About</a></li>
                       <li class="scroll-to-section"><a href="#team">Team</a></li>
                       <li class="scroll-to-section"><a href="#contact">Register Now!</a></li>
                   </ul>   
@@ -204,7 +282,7 @@ https://templatemo.com/tm-586-scholar
 
 
 
-  <div class="section about-us">
+  <div class="section about-us" id="About">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 offset-lg-1">
@@ -243,7 +321,7 @@ https://templatemo.com/tm-586-scholar
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   A- Academical tuition (KG to PG and madrasa tuition (1 to 12))<br>
-                  B-Customised courses like Spoken Eng and arb , Translation etc                  
+                  B- Customised courses like Spoken English and Arabic , Translation etc                  
                 </div>
               </div>
             </div>
@@ -333,7 +411,7 @@ https://templatemo.com/tm-586-scholar
         <div class="col-lg-12 text-center">
           <div class="section-heading">
             <h6>Our Courses</h6>
-            <h2>Latest Courses at Mr. Tutor Tuition Academy</h2>
+            <h2>Courses at Mr. Tutor Academy</h2>
           </div>
         </div>
       </div>
@@ -445,7 +523,7 @@ https://templatemo.com/tm-586-scholar
             <div class="main-content">
               <img src="assets/images/member-02.jpg" alt="">
               <span class="category">CGO</span>
-              <h4>Mohammad Udaifa Wafy</h4>
+              <h4>Mohammad Udaifa</h4>
               
             </div>
           </div>
@@ -470,7 +548,9 @@ https://templatemo.com/tm-586-scholar
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6"><br><br><br><br>
+
+        
+        <div class="col-lg-3 col-md-6"><br><br><br><br><br>
           <div class="team-member">
             <div class="main-content">
               <img src="assets/images/member-05.jpg" alt="">
@@ -499,7 +579,6 @@ https://templatemo.com/tm-586-scholar
           <div class="item">
             <p>“I am studying 5th standard in Madrasa and 6th standard in School. I'm learning Qirath with the help of a well-qualified tutor.”</p>
             <div class="author">
-              <img src="assets/images/testimonial-author.jpg" alt="">
               <span class="category">Student</span>
               <h4>Ayana Ayisha</h4>
             </div>
@@ -507,7 +586,6 @@ https://templatemo.com/tm-586-scholar
           <div class="item">
             <p>“I am studying in Delhi private school, Ajman in 7th standard. As I need improvement in Maths, I joined Mr Tutor. Hajara Mam helps me to improve my maths. Thanks Hajara Mam and Mr Tutor.”</p>
             <div class="author">
-              <img src="assets/images/testimonial-author.jpg" alt="">
               <span class="category">Student</span>
               <h4>Zenha Fathima</h4>
             </div>
@@ -515,7 +593,6 @@ https://templatemo.com/tm-586-scholar
           <div class="item">
             <p>“I am studying in 5th standard. I'm very thankful to Mr Tutor who helps me to learn and makes me better. Thank you.”</p>
             <div class="author">
-              <img src="assets/images/testimonial-author.jpg" alt="">
               <span class="category">Student</span>
               <h4>Manha Fathima</h4>
             </div>
@@ -523,7 +600,6 @@ https://templatemo.com/tm-586-scholar
           <div class="item">
             <p>“The learning experience is really amazing here. Tutor is very hardworking. The real experience about class is beyond the words. I am completely satisfied.”</p>
             <div class="author">
-              <img src="assets/images/testimonial-author.jpg" alt="">
               <span class="category">Student</span>
               <h4>Ahzan M</h4>
             </div>
@@ -531,7 +607,6 @@ https://templatemo.com/tm-586-scholar
           <div class="item">
             <p>“My student is attentive and his response towards the subject is really good.”</p>
             <div class="author">
-              <img src="assets/images/testimonial-author.jpg" alt="">
               <span class="category">Tutor</span>
               <h4>Bismiya Tutor</h4>
             </div>
@@ -539,7 +614,6 @@ https://templatemo.com/tm-586-scholar
           <div class="item">
             <p>“I am here first to take online tuition. So I had little tension in the beginning. But when class started, things were going very smoothly. My student is very cooperative and attending classes properly. I am so glad to be a part of Mr Tutor Family.”</p>
             <div class="author">
-              <img src="assets/images/testimonial-author.jpg" alt="">
               <span class="category">Tutor</span>
               <h4>Hisana Tutor</h4>
             </div>
@@ -547,7 +621,6 @@ https://templatemo.com/tm-586-scholar
           <div class="item">
             <p>“I feel so comfortable working with you. I'm pleased with your rules and regulations. Our authorities are so cooperative and helping. I think our institution is in an expansion stage. So happy to be working with you. Thank you for your consideration and support.”</p>
             <div class="author">
-              <img src="assets/images/testimonial-author.jpg" alt="">
               <span class="category">Tutor</span>
               <h4>Amina Shana Tutor</h4>
             </div>
@@ -555,7 +628,6 @@ https://templatemo.com/tm-586-scholar
           <div class="item">
             <p>“The format of attendance is easy and convenient.”</p>
             <div class="author">
-              <img src="assets/images/testimonial-author.jpg" alt="">
               <span class="category">Tutor</span>
               <h4>Bismiya Tutor</h4>
             </div>
@@ -584,7 +656,7 @@ https://templatemo.com/tm-586-scholar
             <h6>Contact Us</h6>
             <h2>Feel free to contact us anytime</h2>
             <p>Thank you for choosing our tutoring services. We are committed to providing top-notch learning experiences to help you reach your educational goals. Get in touch with us for personalized learning plans and expert guidance.</p><br>
-            <strong>Phone:</strong> +919605452862 / +917902452862
+            <strong>Phone:</strong> +919605452862 / +917902452862<br>
             <strong>Email:</strong> <a href="mailto:mrtutorenquiries@gmail.com">mrtutorenquiries@gmail.com</a>
         
           </div>
@@ -630,6 +702,14 @@ https://templatemo.com/tm-586-scholar
   </footer>
   
   <!-- Scripts -->
+
+  <!-- WhatsApp Chat Button -->
+<a href="https://wa.me/919605452862" target="_blank" 
+id="whatsapp-button"
+class="whatsapp-button flex items-center justify-center">
+<i class="fab fa-whatsapp text-green-500 text-5xl"></i> <!-- Increased icon size -->
+</a>
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
